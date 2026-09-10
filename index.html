@@ -2,21 +2,19 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>האפליקציה שלי</title>
-    <link rel="stylesheet" href="style.css">
+    <title>אפליקציית ה-Java שלי</title>
+    <!-- טעינת ספריית CheerpJ הרשמית מהשרת שלהם -->
+    <script src="https://leaningtech.com"></script>
 </head>
 <body>
-    <h1>ברוכים הבאים לאפליקציה שלי!</h1>
-    <p>הדף הזה רץ כעת בשידור חי דרך GitHub Pages.</p>
+    <h2>האפליקציה שלי רצה בדפדפן!</h2>
     
-    <button id="clickMe">לחצו כאן</button>
-    <p id="message"></p>
-
     <script>
-        // קוד JavaScript פשוט להוספת אינטראקטיביות
-        document.getElementById('clickMe').addEventListener('click', function() {
-            document.getElementById('message').textContent = 'הקוד עובד בהצלחה!';
+        // אתחול סביבת הריצה של Java בדפדפן
+        cheerpjInit().then(function() {
+            // הרצת קובץ ה-JAR שלך (החלף את myApp.jar בשם הקובץ שלך)
+            // הפרמטר השני הוא מערך של ארגומנטים (אם יש צורך)
+            cheerpjRunJar("/app/myApp.jar");
         });
     </script>
 </body>
