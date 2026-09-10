@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האפליקציה שלי</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ברוכים הבאים לאפליקציה שלי!</h1>
+    <p>הדף הזה רץ כעת בשידור חי דרך GitHub Pages.</p>
+    
+    <button id="clickMe">לחצו כאן</button>
+    <p id="message"></p>
+
+    <script>
+        // קוד JavaScript פשוט להוספת אינטראקטיביות
+        document.getElementById('clickMe').addEventListener('click', function() {
+            document.getElementById('message').textContent = 'הקוד עובד בהצלחה!';
+        });
+    </script>
+</body>
+</html>
